@@ -30,6 +30,30 @@ typealias str = String
 var s: str = "this is a string."
 print(s)
 
+// tuples
+print("Tuples:")
+let complex1 = (1.0, -2.0)
+
+//access by index
+let real1 = complex1.0
+let imag1 = complex1.1
+print("\(real1), \(imag1)")
+
+//decompose
+let (real2, imag2) = complex1
+print("\(real2), \(imag2)")
+
+//underscore ignore values
+let color = ("Green", 822, 0)
+let (name, code, _) = color
+print("name: \(name), code: \(code)")
+
+//name elements
+let id = (name: "Samin", roll:1507099)
+let Name = id.name
+print("name is \(Name)")
+
+
 //optionals
 
 /*
