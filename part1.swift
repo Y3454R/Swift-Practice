@@ -50,8 +50,9 @@ print("name: \(name), code: \(code)")
 
 //name elements
 let id = (name: "Samin", roll:1507099)
-let Name = id.name
-print("name is \(Name)")
+let name = id.name
+let roll = id.roll
+print("name is \(name) and roll: \(roll)")
 
 
 //optionals
