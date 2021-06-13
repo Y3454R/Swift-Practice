@@ -115,3 +115,82 @@ func mean(_ numbers: Double ...) -> Double {
 }
 
 print("mean is: \(mean(10.8, 3.8, 4.5, 7.39, 85.9))")
+
+// variable parameters slide 37 page
+// run hoy na
+/*
+func foo(let constantPara: Int, var variablePara: Int) { // let var ney na
+    //constantPara += 1 // ERROR
+    variablePara = variablePara + 2 // run hoy na to
+}
+
+foo(constantPara: 5, variablePara: 3)
+*/
+
+// inout parameters
+
+print("inout parameters:")
+
+func swapInt(_ a: inout Int, _ b: inout Int) {
+    var temp = a
+    a = b 
+    b = temp 
+}
+var m = 3, n = 5
+swapInt (&m, &n)
+
+print("m: \(m), n: \(n)")
+
+//function types
+
+print("using function types:")
+
+func add2Ints(_ a: Int, _ b: Int) -> Int {
+    return a + b
+}
+
+func mult2Ints(_ a: Int, _ b: Int) -> Int {
+    return a * b
+}
+
+var mathFunction: (Int, Int) -> Int = add2Ints // a function type variable !
+
+print("result of mathFunction: \(mathFunction(3, 6))")
+
+mathFunction = mult2Ints //A different function with the same matching type can be assigned to the same variable
+
+print("now result of math function: \(mathFunction(3, 6))")
+
+func printMathFunctionResult(_ mathFunction: (Int, Int) -> Int, _ a: Int, _ b: Int) {
+    print("RESULT: \(mathFunction(a, b))")
+}
+
+printMathFunctionResult(add2Ints, 3, 5)
+
+func stepUp(_ x: Int) -> Int {
+    return x + 1
+}
+
+func stepDown(_ x: Int) -> Int {
+    return x - 1
+}
+
+func chooseStep(down: Bool) -> (Int) -> Int {
+    return down ? stepDown : stepUp
+}
+
+var currentValue = 3
+var stepfunc = chooseStep(down: currentValue > 0) // refers to a function
+print("ANS: \(stepfunc(currentValue))")
+
+//curried functions
+
+func addTwoIntsCurried (_ a: Int) -> (Int) -> Int {
+    func addOtherInt (_ b: Int) -> Int {
+        return a + b
+    }
+    return addOtherInt
+}
+
+ans = addTwoIntsCurried(1)(2)
+print(ans)
