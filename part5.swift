@@ -1,7 +1,7 @@
+// closures
+
 //https://docs.swift.org/swift-book/LanguageGuide/Closures.html
 
-
-// closures
 print("without Closures:")
 
 // slide er code chole na
