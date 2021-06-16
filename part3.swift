@@ -1,4 +1,4 @@
-// if else
+// If else
 
 print("if else:")
 
