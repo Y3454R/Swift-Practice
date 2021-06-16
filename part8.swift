@@ -1,4 +1,5 @@
 // Structures
+
 print("Structures:")
 struct CellPoint {
     var x = 0.0
