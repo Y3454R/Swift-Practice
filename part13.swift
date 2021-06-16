@@ -78,6 +78,7 @@ struct Point {
 
 var somePoint = Point(x: 1.0, y: 1.0)
 somePoint.moveBy(xx: 2.0, yy: 3.0)
+
 */
 
 // implicit self property
