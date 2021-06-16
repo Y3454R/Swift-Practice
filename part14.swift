@@ -1,8 +1,6 @@
 // Subscripts
 
-/*
-https://docs.swift.org/swift-book/LanguageGuide/Subscripts.html
-*/
+//https://docs.swift.org/swift-book/LanguageGuide/Subscripts.html
 
 struct tt{
     let mul: Int
