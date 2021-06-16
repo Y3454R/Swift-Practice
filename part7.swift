@@ -73,7 +73,6 @@ print("Earth: \(Planet.earth.rawValue)")
 
 // not in slide: 
 // Not working:
-
 /*
 enum Beverage: CaseIterable {
     case coffee, tea, juice
