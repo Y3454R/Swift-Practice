@@ -1,3 +1,5 @@
+// Function
+
 // https://docs.swift.org/swift-book/LanguageGuide/Functions.html
 // https://code.tutsplus.com/tutorials/swift-from-scratch-function-parameters-types-and-nesting--cms-23056
 // https://www.dev2qa.com/ios-swift-function-external-and-internal-parameter-name-example/
