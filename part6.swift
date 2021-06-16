@@ -1,9 +1,11 @@
+// Advanced Operators
+
 //This should be learned after learning  Structures
 
 // https://youtu.be/SjS1Rp0LetE?t=629
 //https://docs.swift.org/swift-book/LanguageGuide/AdvancedOperators.html
 
-// Advanced Operators
+
 print("Advanced Operators:")
 
 struct Vector3D {
