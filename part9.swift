@@ -1,4 +1,4 @@
-// STRING
+// String
 
 import Foundation // necessary for hasSuffix and hasPrefix
 
