@@ -57,7 +57,11 @@ class hiruSaikel: HeroCycle {
 var heroSaikel = hiruSaikel()
 heroSaikel.makeNoise()
 
-// You can prevent a method, property, or subscript from being overridden by marking it as final. Do this by writing the final modifier before the method, property, or subscript’s introducer keyword (such as final var, final func, final class func, and final subscript).
+/*
+You can prevent a method, property, or subscript from being overridden by marking it as final.
+Do this by writing the final modifier before the method, property, or subscript’s introducer keyword (such as final var, final func, final class func, and final subscript).
+*/
+
 /*
 final class Car: Vehicle {
     final var wheels: Int //can not be overridden
